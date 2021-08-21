@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+   width: 100vw; 
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+#crown {
+    width: 800px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    position: absolute;
+    width: 820px;
+    height: 20px;
+    background-color: rgb(245, 220, 77);
+    border-radius: 5px;
+}
+
+.btop {
+    margin-bottom: 80px;
+}
+
