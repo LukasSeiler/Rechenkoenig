@@ -12,25 +12,70 @@ html, body {
    justify-content: space-around;
 }
 
-#crown {
+.crown {
     width: 800px;
-    height: 100px;
-    background-color: gold;
-    border-radius: 30px;
+    height: 400px; 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
+}
+
+.bottom-crown {
+    width: 800px;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    background-color: gold;
+    border-radius: 30px;
 }
 
 .border {
     position: absolute;
     width: 820px;
     height: 20px;
-    background-color: rgb(245, 220, 77);
+    background-color: rgb(250, 238, 168);
     border-radius: 5px;
 }
 
-.btop {
-    margin-bottom: 80px;
+.bbottom {
+    bottom: 0;
 }
+
+.btop {
+    bottom: 120px;
+}
+
+.content {
+    width: 800px;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+    border-radius: 30px; 
+}
+
+.zahl1, .zahl2, .variable {
+    width: 140px;
+    height: 60px;
+    position: absolute;
+    background-color:rgb(152, 118, 247);
+    border-radius: 30px;
+}
+
+.zahl1 {
+    left: 100px;
+}
+
+.zahl2 {
+    right: 100px;
+}
+
+.variable { 
+    left: auto;
+    right: auto;
+} 
 
