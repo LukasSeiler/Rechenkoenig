@@ -9,17 +9,120 @@ html, body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-evenly;
 }
 
 .crown {
     width: 800px;
-    height: 400px; 
+    height: 450px; 
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+}
+
+.curve1, .curve1::after {
+    content: "";
+    width: 250px;
+    height: 330px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.curve1 {
+    left: 50px;
+    box-shadow: -40px -40px gold;
+    border-radius: 150px 0px 0px 0px;
+}
+
+.curve1::after {
+    left: 450px;
+    box-shadow: 40px -40px gold;
+    border-radius: 0px 150px 0px 0px;
+}
+
+.curve2, .curve2::after {
+    content: "";
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.curve2 {
+    left: 200px;
+    box-shadow: -40px -40px gold;
+    border-radius: 150px 0px 0px 0px;
+}
+
+.curve2::after {
+    left: 140px;
+    box-shadow: 40px -40px gold;
+    border-radius: 0px 150px 0px 0px;
+}
+
+.curve3 {
+    width: 50px;
+    height: 400px;
+    background-color: gold;
+    position: absolute;
+}
+
+.p {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 253, 220);
+    border-radius: 15px;
+    position: absolute;
+}
+
+#p1 {
+    left: 15px;
+    bottom: 160px;
+}
+
+#p2 {
+    left: 15px;
+    bottom: 230px;
+}
+
+#p3 {
+    left: 25px;
+    bottom: 300px; 
+}
+
+#p4 {
+    left: 80px;
+    bottom: 370px;   
+}
+
+.pillow, .pillow::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 230px;
+    background-color: rgba(255, 0, 0, 0.664);
+    border-radius: 130px 130px 0px 0px;
+}
+
+.pillow::after {
+    content: "";
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+    width: 350px;
+    height: 260px;
+    background-color: rgba(161, 6, 6, 0.897);
+    border-radius: 130px 130px 0px 0px;
+}
+
+.pillow {
+    left: 10px;
+}
+
+.pillow::before {
+    left: 480px;
 }
 
 .bottom-crown {
@@ -59,23 +162,42 @@ html, body {
 }
 
 .zahl1, .zahl2, .variable {
-    width: 140px;
+    width: 130px;
     height: 60px;
-    position: absolute;
+    position: relative;
     background-color:rgb(152, 118, 247);
     border-radius: 30px;
 }
 
-.zahl1 {
-    left: 100px;
+.perlen1, .perlen2, .perlen3, .perlen4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
-.zahl2 {
-    right: 100px;
+.perle, .perle::before, .perle::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: rgb(255, 253, 220);
 }
 
-.variable { 
-    left: auto;
-    right: auto;
-} 
+.perle {
+    left: 0px;
+    bottom: 0px; 
+}
 
+.perle::before {
+    left: 17.5px;
+    bottom: 35px;
+}
+
+.perle::after {
+    left: 35px;
+    bottom: 0px;
+}
