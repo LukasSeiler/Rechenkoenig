@@ -8,8 +8,11 @@ const p_var = document.getElementById('variable')
 var lvl = 1
 var rounds = 0
 var points = 0
+var zahl1
+var zahl2
+var variable
 
-window.onload = function() {
+window.onload = function () {
     getData()
     //condition ? value if true : value if false
     StartNewRound()
@@ -17,8 +20,39 @@ window.onload = function() {
 
 function StartNewRound() {
     reloadData()
+    setData()
+    zahl1 = Math.round(Math.random() * lvl, 0)
+    zahl2 = Math.round(Math.random() * lvl, 0)
+    if (zahl1 < zahl2) {
+        let temp = zahl1
+        zahl1 = zahl2
+        zahl2 = temp
+    }
+    switch (lvl) {
+        case lvl < 5:
+            variable = 1
+            break;
+        case lvl < 10:
+            variable = 2
+            break;
+        case lvl < 15:
+            variable = 3
+            break;
+        case lvl < 20:
+            variable = 4
+            break;
+        default:
+            break;
+    }
+    p_num1.innerHTML = zahl1
+    p_num2.innerHTML = zahl2
+    rounds++
+}
 
-    setData() 
+function checkResult(result) {
+    console.log("test")
+    console.log(result.value)
+    return false
 }
 
 function reloadData() {

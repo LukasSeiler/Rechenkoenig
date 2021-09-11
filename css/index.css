@@ -7,7 +7,7 @@ html, body {
     font-family: fantasy;
 }
 
-p {
+p, input {
     font-family: fantasy; 
     font-size: 25px;
 }
@@ -227,6 +227,7 @@ p {
     text-align: center;
     background-color:rgb(152, 118, 247);
     border-radius: 30px;
+    border: none;
 }
 
 .zahl1 p, .zahl2 p, .variable p {
@@ -234,6 +235,18 @@ p {
     line-height: 60px;
     color: white;
     font-size: 25px;
+}
+
+.result {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 100px;
+    bottom: 200px;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: #000;
+    border: 1px solid black;
 }
 
 .perlen1, .perlen2, .perlen3, .perlen4 {
