@@ -66,20 +66,22 @@
             <div class="bottom-crown"></div>
             <div class="border btop"></div>
             <div class="border bbottom"></div>
-            <input type="submit" class="result" placeholder="Resultat" onsubmit="checkResult(false)">
+            <form style="position: absolute; bottom: 205px;" onsubmit="return checkResult()">
+                <input type="text" class="result" placeholder="Resultat">
+            </form>
             <div class="content">
                 <div class="perlen1">
                     <div class="perle"></div>
                 </div>
-                <div class="zahl1"><p>1</p></div>
+                <div class="zahl1"><p id="zahl1">1</p></div>
                 <div class="perlen2">
                     <div class="perle"></div>
                 </div>
-                <div class="variable"><p>+</p></div>
+                <div class="variable"><p id="variable">+</p></div>
                 <div class="perlen3">
                     <div class="perle"></div>
                 </div>
-                <div class="zahl2"><p>1</p></div>
+                <div class="zahl2"><p id="zahl2">1</p></div>
                 <div class="perlen4">
                     <div class="perle"></div>
                 </div>

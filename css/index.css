@@ -238,11 +238,9 @@ p, input {
 }
 
 .result {
-    position: absolute;
     z-index: 1;
     width: 250px;
     height: 100px;
-    bottom: 200px;
     text-align: center;
     background-color: blanchedalmond;
     color: #000;
