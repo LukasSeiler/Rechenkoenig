@@ -10,7 +10,7 @@
 
 ## Screenshots
 
-![Interface](/img/1.png "UI")
+![Interface](/img/1.PNG "UI")
 
 ## Built With
 
